@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <a href="login">login</a>
+    <a href="signup">signup</a>
+    <% if sessions[:user] %>
+      <p>You are logged in</p>
+    <% end %>
+  </body>
+</html>
