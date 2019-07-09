@@ -5,7 +5,10 @@ enable :sessions
 class User < ActiveRecord::Base
 end
 
+# LOCAL
 # ActiveRecord::Base.establish_connection(adapter: "sqlite3", database: "./db.sqlite3")
+# HEROKU
+require "active_record"
 ActiveRecord::Base.establish_connection(ENV["DATABASE_URL"])
 
 get "/" do
