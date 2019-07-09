@@ -13,12 +13,12 @@ ActiveRecord::Base.establish_connection(ENV["DATABASE_URL"])
 
 get '/' do
   puts 'running'
-  erb :'users/home'
+  erb :home
 end
 
 get '/signup' do
   @user = User.new
-  erb :'users/signup'
+  erb :signup
 end
 
 post '/signup' do
@@ -30,14 +30,14 @@ post '/signup' do
 end
 
 get '/thanks' do
-  erb :'users/thanks'
+  erb :thanks
 end
 
 get '/login' do
   if session[:user_id]
     redirect '/'
   else
-    erb :'users/login'
+    erb :login
   end
 end
 
