@@ -1,14 +1,11 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <a href="login">login</a>
-    <a href="signup">signup</a>
-    <% if session[:user] %>
-      <p>You are logged in</p>
-    <% end %>
-  </body>
-</html>
+<h1>Welcome to my website</h1>
+<% if session[:user_id] %>
+  <form action="/logout" method="post">
+    <input type="submit" value="log out">
+  </form>
+<% else %>
+  <a href="/login">Login</a>
+  <a href="/signup">Signup</a>
+<% end %>
+
+<%= session[:user_id] %>
