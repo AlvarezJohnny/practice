@@ -4,19 +4,21 @@
   </form>
   <%= session[:user].first_name %>
   <section class="create">
+    <span>
   <form action="create_post" method="post">
 
     <label>Title</label>
-    <input type="text" name="title">
+    <input type="text" name="title" required>
 
     <label>Content</label>
-    <input type="text" name="content">
+    <input type="text" name="content" required>
 
     <label>Image URL</label>
     <input type="text" name="image_url">
 
     <input type="submit" value="Post">
   </form>
+</span>
 </section>
 
 <section class="post">
@@ -38,6 +40,8 @@
 </section>
 
 <% else %>
+  <span>
   <a href="/login">Login</a>
   <a href="/signup">Signup</a>
+</span>
 <% end %>

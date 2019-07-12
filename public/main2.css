@@ -86,3 +86,21 @@ li a:hover {
   font-family: sans-serif;
   color: gold;
 }
+
+.create span {
+  display: inline; /* the default for span */
+  width: 300px;
+  height: 300px;
+  padding: 1px;
+  border: 1px solid blue;
+  background-color: grey;
+}
+
+.login {
+  display: inline; /* the default for span */
+  width: 300px;
+  height: 300px;
+  padding: 1px;
+  border: 1px solid blue;
+  background-color: grey;
+}

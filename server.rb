@@ -60,7 +60,7 @@ get '/login' do
 end
 
 post '/login' do
-  email = params[:email]
+  emails = params[:email]
   given_password = params['password']
   user = User.find_by(email: params['email'])
   if user

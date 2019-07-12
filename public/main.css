@@ -3,7 +3,6 @@ body {
   text-align: center;
   background-image: url('https://s3.amazonaws.com/twin-galaxies-www/assets/editorial/2018/09/dbfz-galactic-arena.JPG');
   background-repeat: no-repeat;
-  background-size: cover;
 
 }
 
@@ -48,4 +47,70 @@ li a:hover {
   margin-left: 15%;
   display: grid;
   grid-template: 312px 36px / 515px 10px;;
+}
+
+.create {
+  margin-left: 43%;
+  text-align: center;
+  display: grid;
+  grid-template: 175px/ 130px 0px 0px
+}
+
+.post {
+  margin-left: 43%;
+  text-align: center;
+  display: grid;
+  grid-template: 10px / 158px
+}
+
+.title {
+  font-size: 30px;
+}
+
+.register {
+  text-align: right;
+  margin-right: 9%;
+}
+
+.signup {
+  margin-left: 82%;
+  margin: -21% 78%;
+  text-align: center;
+  display: grid;
+  grid-template: 10px / 158px;
+
+}
+
+.signup span {
+  display: inline; /* the default for span */
+  width: 300px;
+  height: 300px;
+  padding: 1px;
+  border: 1px solid blue;
+  background-color: grey;
+}
+
+
+.signup label {
+  font-size: 20px;
+  font-family: sans-serif;
+  color: gold;
+}
+
+.create span {
+  display: inline; /* the default for span */
+  width: 300px;
+  height: 300px;
+  padding: 1px;
+  border: 1px solid blue;
+  background-color: grey;
+}
+
+.login span {
+  display: inline; /* the default for span */
+  width: 300px;
+  height: 300px;
+  padding: 1px;
+  border: 1px solid blue;
+  background-color: grey;
 }
