@@ -114,3 +114,9 @@ li a:hover {
   border: 1px solid blue;
   background-color: grey;
 }
+
+.all {
+  color: white;
+  font-size: 30px;
+  margin-top: 300px;
+}

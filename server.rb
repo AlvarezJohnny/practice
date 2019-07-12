@@ -21,6 +21,16 @@ require "active_record"
 # ActiveRecord::Base.establish_connection(ENV["DATABASE_URL"])
 
 get '/' do
+  @all_posts = Post.last(20)
+  for letter in @all_posts
+     if letter
+       letter.title
+       letter.content
+       letter.image_url
+       letter.user_id
+     else
+     end
+   end
   erb :home
 end
 

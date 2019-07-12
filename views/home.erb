@@ -9,3 +9,11 @@
 <img src="https://www.smashbros.com/assets_v2/img/movie/20180613_1.jpg">
 <% end %>
 </div>
+
+<div class="all">
+<%for pub in @all_posts%>
+  <h1><%=pub.title%></h1>
+  <p><%=pub.content%></p>
+  <p><%=pub.user_id%></p>
+<%end%>
+</div>
