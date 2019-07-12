@@ -1,14 +1,30 @@
-<h1>Signup</h1>
+<div class="register">
+  <h1>Signup</h1>
+</div>
+<h1>A New Fighter Is Approaching</h1>
+<img src="https://pa1.narvii.com/6384/337b826ea039383139614f96af8030dda7793387_hq.gif">
+
+<section class="signup">
+  <span>
 <form action="/signup" method="post">
+
   <label>First Name</label>
-  <input type="text" name="first_name">
+  <input type="text" name="first_name" required>
+
   <label>Last Name</label>
-  <input type="text" name="last_name">
+  <input type="text" name="last_name" required>
+
   <label>Email</label>
-  <input type="email" name="email">
+  <input type="email" name="email" required>
+
   <label>Password</label>
-  <input type="password" name="password">
+  <input type="password" name="password" required>
+
+  <label>Birthday</label>
+  <input type="date" name="birthday" required>
   <p>
     <input type="submit">
   </p>
 </form>
+</span>
+</section>

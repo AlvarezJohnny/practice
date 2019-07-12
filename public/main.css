@@ -1,0 +1,51 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background-image: url('https://s3.amazonaws.com/twin-galaxies-www/assets/editorial/2018/09/dbfz-galactic-arena.JPG');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+nav img {
+  height: 100px;
+  width: 100px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  margin: 0px 0px;
+}
+
+li a {
+  font-size: 25px;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 36px 16px;
+
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.rumble img {
+  height: 300px;
+  width: 500px;
+}
+
+.rumble {
+  margin-left: 15%;
+  display: grid;
+  grid-template: 312px 36px / 515px 10px;;
+}

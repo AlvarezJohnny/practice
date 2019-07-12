@@ -1,11 +1,11 @@
-<h1>Welcome to my website</h1>
-<% if session[:user_id] %>
-  <form action="/logout" method="post">
-    <input type="submit" value="log out">
-  </form>
-<% else %>
-  <a href="/login">Login</a>
-  <a href="/signup">Signup</a>
-<% end %>
+<h1>Welcome to Rumblr</h1>
+<h2>Anything and Everything To Do With Fighting Games</h2>
 
-<%= session[:user_id] %>
+<div class="rumble">
+<% if request.path == "/" %>
+<img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ad/DBFZ_cover_art.jpg/220px-DBFZ_cover_art.jpg">
+<img src="https://static1.squarespace.com/static/56d8f00a40261d184629d512/t/5942c9b56b8f5b9a5880f6d5/1512756285034/SF4CE_WebsiteVideoThumbnail_1920x1080_02.jpg?format=1000w">
+<img src="https://www.gamerbraves.com/wp-content/uploads/2019/02/Samurai-shodown-Gamerbraves.png">
+<img src="https://www.smashbros.com/assets_v2/img/movie/20180613_1.jpg">
+<% end %>
+</div>

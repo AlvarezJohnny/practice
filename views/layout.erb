@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <% if request.path == "/" %>
+      <link rel="stylesheet" href="main.css">
+    <% else %>
+      <link rel="stylesheet" href="main2.css">
+    <% end %>
+  </head>
+  <body>
+    <nav id="bar">
+      <ul>
+        <li><img src="https://res.cloudinary.com/teepublic/image/private/s--MtkyhlZG--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1496984766/production/designs/1655960_0.jpg"></li>
+        <% if session[:user] %>
+        <li><a href="/profile">Profile</a></li>
+        <li><a href="/account">My Account</a></li>
+        <% else %>
+        <li><a href="/signup">Signup</a></li>
+        <li><a href="/login">Login</a></li>
+         <% end %>
+      </ul>
+    </nav>
+
+    <script src="main.js" charset="utf-8"></script>
+    <%= yield %>
+  </body>
+</html>

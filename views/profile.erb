@@ -1,0 +1,43 @@
+<% if session[:user] %>
+  <form action="/logout" method="post">
+    <input type="submit" value="Log Out">
+  </form>
+  <%= session[:user].first_name %>
+  <section class="create">
+  <form action="create_post" method="post">
+
+    <label>Title</label>
+    <input type="text" name="title">
+
+    <label>Content</label>
+    <input type="text" name="content">
+
+    <label>Image URL</label>
+    <input type="text" name="image_url">
+
+    <input type="submit" value="Post">
+  </form>
+</section>
+
+<section class="post">
+
+  <form action="delete_post" method="post">
+  <% @publish.each do |posts| %>
+  <div class="title">
+    <%= posts.title %>
+  </div>
+
+  <div class="content">
+    <%= posts.content %>
+    <%= posts.image_url %>
+  </div>
+  <input type="submit" name="" value="Delete">
+  <% end %>
+
+  </form>
+</section>
+
+<% else %>
+  <a href="/login">Login</a>
+  <a href="/signup">Signup</a>
+<% end %>

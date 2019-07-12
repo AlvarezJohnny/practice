@@ -1,0 +1,11 @@
+<% if session[:user] %>
+<h1>Do you want to delete?</h1>
+
+<form action="/delete_user" method="post">
+  <input type="submit" value="Delete Account" name="DELETE">
+</form>
+
+<% else %>
+  <a href="/login">Login</a>
+  <a href="/signup">Signup</a>
+<% end %>
